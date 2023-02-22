@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Fredoka One', cursive;
+    background-color: rgb(35, 79, 58);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(48, 149, 100);
+    padding: 1em 3em;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul a{
+    text-decoration: none;
+    margin: 0 2em;
+    color: black;
+}
