@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../animation1/assets/css/style.css">
+    <title>Animations</title>
+</head>
+<body>
+    <header>
+        <h1>My animation</h1>
+        <nav>
+            <ul>
+                <a href="./animations/animation1/index.html" id="nav1">Animations</a>
+                <a href="#" id="nav2">Your creation</a>
+                <a href="#" id="nav3">about</a>
+            </ul>
+        </nav>
+    </header>
+    <section id="section1">
+        <div id="animation1">
+            <form id="svg-form">
+                <label for="text-input">Texte :</label>
+                <input type="text" id="text-input" name="text-input" placeholder="Entrez votre texte ici">
+                              
+                <label for="font-family-select">Police :</label>
+                <select id="font-family-select" name="font-family-select">
+                  <option value="Arial">Arial</option>
+                  <option value="Helvetica">Helvetica</option>
+                  <option value="Times New Roman">Times New Roman</option>
+                  <option value="Courier">Courier</option>
+                  <option value="Courier New">Courier New</option>
+                </select>
+                              
+                <label for="font-size-input">Taille de police :</label>
+                <input type="number" id="font-size-input" name="font-size-input" value="24" min="1" max="100">
+
+                <label for="stroke-dasharray">Trait timbre :</label>
+                <input type="number" id="stroke-dasharray" name="stroke-dasharray" value="1" min="1" max="1000">
+                
+                <label for="stroke-width">Taille du trait :</label>
+                <input type="number" id="stroke-width" name="stroke-width" value="1" min="1" max="10">
+
+                <label for="fill">Type de remplissage :</label>
+                <select id="fill" name="fill">
+                  <option value="fill">Remplir</option>
+                  <option value="none">Supprimer</option>
+                </select>
+
+                <label for="color-input">Couleur :</label>
+                <input type="color" id="color-input" name="color-input" value="#000000">
+                
+                <label for="duration-input">Durée de l'animation :</label>
+                <input type="number" id="duration-input" name="duration-input" value="6" min="1" max="30">
+                
+                <label for="from-input">Début de l'animation :</label>
+                <input type="number" id="from-input" name="from-input" value="0" min="0" max="10">
+                
+                <label for="to-input">Fin de l'animation :</label>
+                <input type="number" id="to-input" name="to-input" value="10" min="0" max="1000">
+                
+                <label for="begin-input">Délai de l'animation :</label>
+                <input type="number" id="begin-input" name="begin-input" value="0" min="0" max="10">
+
+                <label for="values">Valeurs :</label>
+                <input type="text" id="values" name="values" placeholder="ex: 0 400;400 0">
+                
+                <label for="fill-input">Comportement :</label>
+                <select id="fill-input" name="fill-input">
+                  <option value="freeze">Freeze</option>
+                  <option value="remove">Remove</option>
+                  <option value="both">Both</option>
+                  <option value="backwards">backwards</option>
+                  <option value="forwards">forwards</option>
+                  <option value="none">none</option>
+                </select>
+                
+                <button type="submit">Générer l'image SVG</button>
+              </form>
+              
+            <div id="containerSVG">
+                <button id="download-button" type="button">Télécharger l'image SVG</button>
+                <div id="svg-div"></div>
+            </div>
+        </div>
+    </section>
+<script src="../animation1/assets/js/app.js"></script>
+</body>
+</html>
